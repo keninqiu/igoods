@@ -1,1 +1,0 @@
-ALTER TABLE `%prefix%activity` ADD INDEX `type` (`type` ASC);

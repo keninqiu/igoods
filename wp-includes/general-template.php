@@ -894,7 +894,6 @@ function get_custom_logo( $blog_id = 0 ) {
 	}
 
 	$custom_logo_id = get_theme_mod( 'custom_logo' );
-	echo "custom_logo_id=".$custom_logo_id;
 	// We have a logo. Logo is go.
 	if ( $custom_logo_id ) {
 		$custom_logo_attr = array(
