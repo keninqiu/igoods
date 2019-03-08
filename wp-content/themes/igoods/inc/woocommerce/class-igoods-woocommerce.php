@@ -136,7 +136,7 @@ if ( ! class_exists( 'Igoods_WooCommerce' ) ) :
 		 */
 		public function woocommerce_scripts() {
 			global $igoods_version;
-
+			echo "woocommerce_scripts there we go.".get_template_directory_uri() ;
 			$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
 			wp_enqueue_style( 'igoods-woocommerce-style', get_template_directory_uri() . '/assets/css/woocommerce/woocommerce.css', array(), $igoods_version );

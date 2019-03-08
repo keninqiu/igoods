@@ -25,23 +25,11 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'storefront_before_header' ); ?>
 
-	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+	<header id="masthead" class="site-header" role="banner" style="<?php igoods_header_styles(); ?>">
 
 
 		<div class="col-full">
-			<!--
-			<a class="skip-link screen-reader-text" href="#site-navigation"><?php esc_attr_e( 'Skip to navigation', 'igoods' ); ?></a>
-			<a class="skip-link screen-reader-text" href="#content"><?php esc_attr_e( 'Skip to content', 'igoods' ); ?></a>
-			<div class="site-branding">
-				<?php igoods_site_title_or_logo(); ?>
-			</div>
 
-			<div class="site-search">
-				<?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
-			</div>	
-
-			<?php storefront_header_cart() ?>
-			-->
 			<div class="col-25">
 				<?php igoods_site_title_or_logo(); ?>
 			</div>
@@ -52,14 +40,7 @@
 						<button type="submit" name="">Search</button>
 					</form>
 				</div>
-				<!--
-			  <div class="search-container">
-			    <form action="/action_page.php">
-			      <input type="text" placeholder="Search.." size="35" name="search">
-			      <button type="submit"><i class="fa fa-search"></i></button>
-			    </form>
-			  </div>
-			-->
+
 			</div>	
 			<div class="col-25">
 				<div class="cart-account">
@@ -73,34 +54,11 @@
 	    			</a>
 	    			</div>
     			</div>
-    <!--			
-				<?php storefront_header_cart() ?>
-	-->
 			</div>					
 		</div>
 
 		<div class="storefront-primary-navigation"><div class="col-full">
 
-<!--
-			<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
-			<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( 'Menu', 'storefront' ) ) ); ?></span></button>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'primary-navigation',
-					)
-				);
-
-
-				?>
-			</nav>
--->
-<?php
-//$items = wp_get_nav_menu_items('Primary Menu');
-//echo json_encode($items);
-
-?>
 
  <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>

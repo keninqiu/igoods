@@ -642,6 +642,7 @@ if ( ! function_exists( 'igoods_handheld_footer_bar' ) ) {
 
 		$links = apply_filters( 'igoods_handheld_footer_bar_links', $links );
 		?>
+		<p>haha</p>
 		<div class="igoods-handheld-footer-bar">
 			<ul class="columns-<?php echo count( $links ); ?>">
 				<?php foreach ( $links as $key => $link ) : ?>

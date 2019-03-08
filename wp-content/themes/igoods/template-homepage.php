@@ -29,6 +29,7 @@ get_header(); ?>
 			 * @hooked igoods_on_sale_products      - 60
 			 * @hooked igoods_best_selling_products - 70
 			 */
+			
 			do_action( 'homepage-igoods' );
 			?>
 

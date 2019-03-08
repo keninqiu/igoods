@@ -23,6 +23,7 @@ if ( ! class_exists( 'Igoods_Customizer' ) ) :
 		 * @since 1.0
 		 */
 		public function __construct() {
+			echo "feawfawfw.";
 			add_action( 'customize_register', array( $this, 'customize_register' ), 10 );
 			add_filter( 'body_class', array( $this, 'layout_class' ) );
 			add_action( 'wp_enqueue_scripts', array( $this, 'add_customizer_css' ), 130 );

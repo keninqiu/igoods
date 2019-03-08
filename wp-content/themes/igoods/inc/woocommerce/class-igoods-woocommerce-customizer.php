@@ -104,6 +104,7 @@ if ( ! class_exists( 'Igoods_WooCommerce_Customizer' ) ) :
 		 * @return string $styles the css
 		 */
 		public function get_css() {
+			echo "get_css";
 			$igoods_theme_mods = $this->get_igoods_theme_mods();
 			$brighten_factor       = apply_filters( 'igoods_brighten_factor', 25 );
 			$darken_factor         = apply_filters( 'igoods_darken_factor', -25 );
